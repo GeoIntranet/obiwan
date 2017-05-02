@@ -41,6 +41,11 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <i class="fa fa-heart"></i>
+        </div>
+    </div>
 </div>
 </body>
 </html>
