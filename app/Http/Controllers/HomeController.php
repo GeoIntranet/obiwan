@@ -13,6 +13,12 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        if (1) {
+
+            $test = 8;
+
+            return json_decode($test);
+        }
         $this->middleware('auth');
     }
 
