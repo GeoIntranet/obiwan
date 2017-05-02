@@ -12,45 +12,28 @@
 
 
 <div class="container">
-    <hr>
+    <br><br><br>
     <div class="row">
         <div class="col-12">
 
-            <div class="card">
-                <h3 class="card-header">Featured</h3>
+            @component('component.module',['module' =>'incident'])
+                @slot('title')
+                    <i class="fa fa-bell white"></i> FORUM
+                @endslot
 
-                <div class="card-block">
-                    <h4 class="card-title">Special title treatment</h4>
+                @slot('menu')
+                    incident
+                @endslot
 
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                @slot('raccourcit')
+                    raccourcit_1
+                @endslot
 
-                </div>
+                @slot('content')
+                    @include('proto.forum.content')
+                @endslot
+            @endcomponent
 
-            </div>
-
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    Header
-                </div>
-                <div class="card-block">
-                    <h4 class="card-title">Header</h4>
-                    <p class="card-text">Header</p>
-                </div>
-                <div class="card-footer text-muted">
-                    Header
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-12">
         </div>
     </div>
 </div>

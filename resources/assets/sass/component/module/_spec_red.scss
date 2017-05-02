@@ -1,0 +1,23 @@
+
+.module-container{
+  &.incident {
+
+    $color_module_content : $red;
+    .module-title {
+      background-color: $color_module_content;
+    }
+    .module-menu {
+      &:hover {
+        background-color: $color_module_content;
+      }
+    }
+    .module-raccourcit-content {
+      border-left: solid 3px $color_module_content;
+    }
+    .module-raccourcit a {
+      &:hover {
+        background-color: $color_module_content;
+      }
+    }
+  }
+}

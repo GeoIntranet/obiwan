@@ -8,32 +8,56 @@ $list-group-border: $laravel-border-color;
 $navbar-default-border: $laravel-border-color;
 $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
-// PRIMAIRES
+
+// Start with assigning color names to specific hex values.
+$white:  #fff !default;
+$black:  #000 !default;
+$teal:   #5bc0de !default;
+$violet: #613d7c !default;
 $red: #CD5C5C;
 $green: #1d9d74;
-$fb: #3B5998;
 $blue:#3B5998;
 $yellow: #ff9900;
-$violet: #b26fc4;
-
-//SECONDAIRES
 $orange: #EC5840;
 $rose :#cd78c7;
+
+
+// Create grayscale
+$gray-dark:                 #292b2c !default;
+$gray:                      #464a4c !default;
+$gray-light:                #636c72 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+$light-gray: #e6e6e6;
+$dark-gray: #8a8a8a;
+$darker-gray: #222222;
+$alert-color : $orange;
+$fb : $blue;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue !default;
+$brand-success:             $green !default;
+$brand-info:                $teal !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
+// PRIMAIRES
+
 $ft_ctt : #333333;
 $ft_titre: #777266;
 $ft_addtache: #868074;
 
 $font-general: #ff7100;
 $red_ :#d04437;
-// Brands
-$brand-primary_: #3097D1;
-$brand-primary__: #3B5998;
-$brand-primary: #bf5329;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
 
+
+$border-modul:#d0d1d5;
+$border-tt:#e9eaed;
+$border-footer:#f1f1f1;
+
+$bgc:#e9eaed;
+$bgc-content:#f6f7f8;
+$bgc-h:#dcdee3;
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: "Roboto", sans-serif;
