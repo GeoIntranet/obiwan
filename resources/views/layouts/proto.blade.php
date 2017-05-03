@@ -8,30 +8,27 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="pad-15">
 
 
 <div class="container">
     <br><br><br>
     <div class="row">
         <div class="col-12">
+            <p>sdmfsmdfkmdskf</p>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12">
 
             @component('component.module',['module' =>'incident'])
-                @slot('title')
-                    <i class="fa fa-bell white"></i> FORUM
-                @endslot
 
-                @slot('menu')
-                    incident
-                @endslot
+                @slot('title') <i class="fa fa-bell white"></i> FORUM @endslot
+                @slot('menu') incident @endslot
+                @slot('raccourcit') raccourcit_1 @endslot
+                @slot('content') @include('proto.forum.content') @endslot
+                @slot('body') test @endslot
 
-                @slot('raccourcit')
-                    raccourcit_1
-                @endslot
-
-                @slot('content')
-                    @include('proto.forum.content')
-                @endslot
             @endcomponent
 
         </div>

@@ -42,7 +42,11 @@
                 <h1>{{$content or ' ton contenu'}}</h1>
             </div>
         </div>
-
+        <div class="row module-content">
+            <div class="col-12">
+                <h1>{{$body or ' ton contenu'}}</h1>
+            </div>
+        </div>
 
     </div>
     <br/>
