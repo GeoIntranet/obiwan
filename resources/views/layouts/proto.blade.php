@@ -11,24 +11,25 @@
 <body class="pad-15">
 
 
-<div class="container">
+<div class="container-fluid">
     <br><br><br>
-    <div class="row">
-        <div class="col-12">
-            <p>sdmfsmdfkmdskf</p>
-        </div>
-    </div>
+
     <div class="row ">
-        <div class="col-12">
-
+        <div class="col-1"></div>
+        <div class="col-10">
             @component('component.module',['module' =>'incident'])
-
                 @slot('title') <i class="fa fa-bell white"></i> FORUM @endslot
                 @slot('menu') incident @endslot
-                @slot('raccourcit') raccourcit_1 @endslot
+                @slot('raccourcit')
+                    <a class="col-md-1 " href=""><i class="fa fa-angle-right"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-list"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-plus-square"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-pencil"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-folder-open"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-folder"></i></a>
+                    <a class="col-md-1 " href=""><i class="fa fa-bitbucket"></i></a>
+                @endslot
                 @slot('content') @include('proto.forum.content') @endslot
-                @slot('body') test @endslot
-
             @endcomponent
 
         </div>

@@ -1,6 +1,6 @@
 <div class="row module-container {!! $module !!}">
 
-    <div class="col-md-3   module-title-menu border___ ">
+    <div class="col-sm-12 col-lg-2 col-md-12 hidden-md   module-title-menu border___ ">
         {{--TITRE colorer -----------------------------------------------------------------------------------------------------------------}}
         <div class="row module-title ">
             <div class="col-md-12 center b">
@@ -10,7 +10,7 @@
         {{-- FIN TITRE colorer--------------------------------------------------------------------------------------------------------------}}
 
         {{--debut MENU GAUCHE ---------------------------------------------------------------------------------------------------------------}}
-        <div class="row fts_080  module-menu ">
+        <div class="row  module-menu ">
             <div class="col-12">
                 {{$menu}}
             </div>
@@ -20,34 +20,22 @@
     </div>
 
     {{--Bloc raccourcit + contenue -------------------------------------------------------------------------------------------------------}}
-    <div class="col-sm-12 col-md-12 col-lg-9  module-raccourcit-content">
+    <div class="col-sm-12 col-md-10 col-lg-10  module-raccourcit-content">
 
         {{--BARRE DE RACCOURCIT ------------------------------------------------------------------------------------------------------------------}}
         <div class="row module-raccourcit ">
             <div class="col-md-12">
                 <div class="row">
-                    <a class="col-md-1 " href=""><i class="fa fa-angle-left"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-list"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-plus-square"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-pencil"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-folder-open"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-folder"></i></a>
-                    <a class="col-md-1 " href=""><i class="fa fa-bitbucket"></i></a>
+                    {{$raccourcit}}
                 </div>
             </div>
         </div>
         {{----------------------------------------------------------------------------------------------------------------------------------------------------------}}
         <div class="row module-content">
             <div class="col-12">
-                <h1>{{$content or ' ton contenu'}}</h1>
+                {{$content or ' ton contenu'}}
             </div>
         </div>
-        <div class="row module-content">
-            <div class="col-12">
-                <h1>{{$body or ' ton contenu'}}</h1>
-            </div>
-        </div>
-
     </div>
     <br/>
 </div>
