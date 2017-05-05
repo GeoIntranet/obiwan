@@ -162,6 +162,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        'Collective\Html\HtmlServiceProvider',
+        'Golonka\BBCode\BBCodeParserServiceProvider',
+
 
         /*
          * Package Service Providers...
@@ -177,6 +180,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+
+        App\Providers\ViewComposerProvider::class,
+        App\Providers\NavigationComposerProvider::class,
+        App\Providers\LocatorRepositoryProvider::class,
+        App\Providers\LocatorServiceProvider::class,
+        App\Providers\LocatorComposerProvider::class,
+        App\Providers\ForumComposerProvider::class,
 
     ],
 
@@ -227,6 +237,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
+        'Input' => Illuminate\Support\Facades\Input::class,
+        'BBCode' => 'Golonka\BBCode\Facades\BBCodeParser'
 
     ],
 

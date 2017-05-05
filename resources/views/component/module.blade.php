@@ -1,6 +1,6 @@
 <div class="row module-container {!! $module !!}">
 
-    <div class="col-sm-12 col-lg-2 col-md-12 hidden-md   module-title-menu border___ ">
+    <div class="col-sm-12 col-lg-2 col-md-12 hidden-lg-down   module-title-menu border___ ">
         {{--TITRE colorer -----------------------------------------------------------------------------------------------------------------}}
         <div class="row module-title ">
             <div class="col-md-12 center b">
@@ -24,7 +24,7 @@
 
         {{--BARRE DE RACCOURCIT ------------------------------------------------------------------------------------------------------------------}}
         <div class="row module-raccourcit ">
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
                 <div class="row">
                     {{$raccourcit}}
                 </div>

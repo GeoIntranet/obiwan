@@ -1,3 +1,5 @@
+
+
 $end:15;
 @for $i from 1 through $end {
   .pad-#{$i} { padding: 1px * $i !important; }
@@ -8,7 +10,10 @@ $end:15;
   .padr-#{$i} { padding-right: 1px * $i !important; }
   .padl-#{$i} { padding-left: 1px * $i !important; }
 }
-
+.border_
+{
+  border:solid 1px red;
+}
 
 .b{font-weight: bold;}
 .left { text-align: left; }

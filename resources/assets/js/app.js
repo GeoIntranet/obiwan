@@ -5,6 +5,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 window.$ = window.jQuery = require('jquery');
+window.Tether = require('tether');
+
 
 require('bootstrap');
 
@@ -19,6 +21,10 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 const app = new Vue({
     el: '#app'
